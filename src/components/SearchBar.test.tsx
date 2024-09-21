@@ -6,16 +6,19 @@ import axios from 'axios';
 import SearchBar from './SearchBar';
 import { act } from 'react-dom/test-utils';
 
-jest.setTimeout(10000);  // At the top of the file
+// Increase test timeout to 10 seconds
+jest.setTimeout(10000);
 
+// Mock axios for API calls
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 
-// Add this before your tests
+// Suppress console errors during tests
 beforeEach(() => {
   jest.spyOn(console, 'error').mockImplementation(() => {});
 });
 
+// Restore all mocks after each test
 afterEach(() => {
   jest.restoreAllMocks();
 });

@@ -2,6 +2,7 @@ import React, { useState, useEffect, KeyboardEvent as ReactKeyboardEvent, useRef
 import axios from 'axios';
 import './SearchBar.css';
 
+// Interfaces for API responses and search result items
 interface SuggestionResponse {
   suggestions: string[];
 }
@@ -16,13 +17,14 @@ interface ResultItem {
   DocumentURI: string;
 }
 
-// Create a separate function for fetching suggestions
+// Function to fetch search suggestions from the API
 export const fetchSuggestionsAPI = async (): Promise<string[]> => {
   const response = await axios.get<SuggestionResponse>('https://gist.githubusercontent.com/yuhong90/b5544baebde4bfe9fe2d12e8e5502cbf/raw/e026dab444155edf2f52122aefbb80347c68de86/suggestion.json');
   return response.data.suggestions;
 };
 
 const SearchBar: React.FC = () => {
+  // State variables for managing search functionality
   const [query, setQuery] = useState('');
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(-1);
