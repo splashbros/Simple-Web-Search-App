@@ -1,23 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SearchBar from './components/SearchBar';
+import govtechLogo from './components/govtechlogo.png'; // Make sure to add this image to your assets folder
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="logo-container">
+          <img src={govtechLogo} alt="GovTech Logo" className="govtech-logo" />
+          <h1>GovTech Search</h1>
+        </div>
+        <SearchBar />
       </header>
     </div>
   );

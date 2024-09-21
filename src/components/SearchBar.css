@@ -1,0 +1,132 @@
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.search-wrapper {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.clear-button {
+    position: absolute;
+    right: 55px; /* Moved closer to the right edge of the input */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #888;
+    z-index: 2; /* Ensure it's above the input */
+  }
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px; /* Adjust for the search button width */
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.suggestions li {
+  color: #333; /* Ensure text color contrasts with background */
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+}
+
+.suggestions li:hover,
+.suggestions li.selected {
+  background-color: #f0f0f0;
+}
+
+.search-button {
+  width: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+.search-results {
+    margin-top: 20px;
+  }
+  
+.results-count {
+margin-bottom: 20px;
+color: #666;
+}
+
+.search-result {
+margin-bottom: 20px;
+padding-bottom: 20px;
+border-bottom: 1px solid #eee;
+}
+
+.search-result h3 {
+margin: 0 0 5px 0;
+color: #0066cc;
+font-size: 18px;
+}
+
+.result-date {
+margin: 0 0 5px 0;
+color: #666;
+font-size: 14px;
+}
+
+.result-link {
+color: #006621;
+font-size: 14px;
+text-decoration: none;
+}
+
+.result-link:hover {
+text-decoration: underline;
+}
+
+.highlight {
+background-color: yellow;
+font-weight: bold;
+}

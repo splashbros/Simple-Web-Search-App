@@ -1,38 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  text-align: left;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: 20px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #333;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.govtech-logo {
+  height: 150px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Adjust SearchBar component styles */
+.search-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Existing styles */
 .App-link {
-  color: #61dafb;
+  color: #0066cc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-results {
+  width: 100%;
+  text-align: left;
+}
+
+.search-result {
+  margin-bottom: 20px;
+}
+
+.search-result h3 {
+  margin-bottom: 5px;
+}
+
+.result-date {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.result-link {
+  color: #006621;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.result-link:hover {
+  text-decoration: underline;
 }
