@@ -11,7 +11,7 @@ This project is a search application built with React and TypeScript for the Gov
 
 1. Clone the repository:
    ```
-   git clone [repository-url]
+   git clone https://github.com/splashbros/Simple-Web-Search-App
    cd search-app
    ```
 
