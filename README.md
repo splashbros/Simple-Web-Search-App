@@ -12,7 +12,7 @@ This project is a search application built with React and TypeScript for the Gov
 1. Clone the repository:
    ```
    git clone https://github.com/splashbros/Simple-Web-Search-App
-   cd search-app
+   cd Simple-Web-Search-App
    ```
 
 2. Install dependencies:
