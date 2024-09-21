@@ -32,6 +32,7 @@ This project is a search application built with React and TypeScript for the Gov
 To run the test suite:
    ```
    npm test
+   a
    ```
 
 
